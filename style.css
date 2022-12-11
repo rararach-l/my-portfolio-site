@@ -4,10 +4,100 @@ body {
   height: 100%;
 }
 
+/* fonts */
 body {
   font-family: 'EB Garamond';
 }
 
-h1 {
-    font-family: 'Hammersmith One'
+h1, h2, h3, h4, h5 {
+  font-family: 'Hammersmith One'
+}
+
+/* navbar */
+
+.customNav {
+  position: fixed;
+  width: 100%;
+  background-color: slategray !important;
+  background-size: 5vh;
+  z-index: 10;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto; !important;
+  align-items: space-between;
+}
+
+
+.jumbotron {
+  height: 80vh;
+  background-image: url(./images/graph-paper.png);
+  background-size: cover;
+}
+
+.jumboCopy {
+  padding-top: 20vh;
+}
+.emphasis {
+  font-size: 2.5rem;
+  font-family: 'Hammersmith One';
+}
+
+.copy {
+  font-family: 'EB Garamond';
+  font-size: 2rem;
+}
+
+/* .jumbotron {
+    height: 50vh;
+    background-image: linear-gradient(rgba(111, 90, 90, 0.264), rgba(255, 255, 255, 0.9)), url("images/hero-image-paper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+} */
+
+/* portfolio grid */
+/* .grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.25fr 1.25fr;
+  grid-template-rows: 4;
+  grid-template-areas: 
+
+} */
+
+/* .portfolioContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "work grid1 grid1"
+    "space grid2 grid3"
+    "space grid4 grid5"
+  ;
+}
+
+.grid1 {
+  grid-area: "grid1";
+}
+
+.grid2 {
+  grid-area: "grid2";
+}
+
+
+.grid4 {
+  grid-area: "grid4";
+}
+
+.grid5 {
+  grid-area: "grid5";
+} */
+
+@media (max-width: 570px) {
+  .jumboCopy {
+    display: none;
+  }
 }
