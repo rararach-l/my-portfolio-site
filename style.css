@@ -57,9 +57,26 @@ h1, h2, h3, h4, h5 {
 
 /* work cards and grid */
 
-.containerGrid {
-  padding: 10vh 20vw 10vh 20vw;
+.card-img-top {
+  height: 250px;
+  object-fit: none;
+  object-position: 100% 80%;
+}
 
+.card-img-top.line {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-img-top.grid {
+  height: 250px;
+  object-fit: none;
+  object-position: 45% 20%;
+}
+
+.footer {
+  background-color: slateblue;
+  height: 80px;
 }
 
 /* media queries */
