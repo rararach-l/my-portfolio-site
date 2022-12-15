@@ -9,8 +9,14 @@ body {
   font-family: 'EB Garamond';
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Hammersmith One'
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Hammersmith One';
+  color: slategray;
 }
 
 /* navbar */
@@ -25,8 +31,17 @@ h1, h2, h3, h4, h5 {
 
 .navbar-nav {
   margin-left: auto;
-  margin-right: auto; !important;
+  margin-right: auto;
+  !important;
   align-items: space-between;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
 }
 
 #work {
@@ -39,23 +54,36 @@ h1, h2, h3, h4, h5 {
   height: 80vh;
   background-image: url(./images/graph-paper.png);
   background-size: cover;
+  border-radius: 0;
 }
 
 .jumboCopy {
-  padding-top: 20vh;
+  padding-left: 20vh;
+  display: inline;
+}
+
+.avatarImage {
+  display: inline;
 }
 
 .emphasis {
   font-size: 2.5rem;
   font-family: 'Hammersmith One';
+  color: slategray;
 }
 
 .copy {
   font-family: 'EB Garamond';
   font-size: 2rem;
+  color: slategray;
 }
 
 /* work cards and grid */
+
+.latestWork {
+  height: 300px;
+  object-fit: cover;
+}
 
 .card-img-top {
   height: 250px;
@@ -74,9 +102,51 @@ h1, h2, h3, h4, h5 {
   object-position: 45% 20%;
 }
 
-.footer {
-  background-color: slateblue;
+.card {
+  margin-bottom: 30px;
+  border-radius: 0%;
+  border-style: dotted;
+}
+
+/* skills and about */
+.skills {
+  margin-bottom: 50px;
+}
+
+.about-me {
+  margin-bottom: 50px;
+}
+
+/* footer */
+.footerContainer {
+  background-color: slategray;
   height: 80px;
+  max-width: 100%;
+}
+
+.footerContent {
+  display: flex;
+  padding-left: 10vw;
+  align-items: center;
+}
+
+#contact {
+  color: white;
+  margin-top: 30px;
+}
+
+.footerContent > button {
+  border-radius: 0%;
+  margin: 18px 0px 0px 10px; 
+  border-style: dotted;
+  border-width: 2px;
+
+}
+
+.boxshadow:hover 
+.boxshadow:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
 }
 
 /* media queries */
