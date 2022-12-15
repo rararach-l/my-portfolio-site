@@ -4,9 +4,13 @@ body {
   height: 100%;
 }
 
-/* fonts */
+/* styling for fonts */
 body {
   font-family: 'EB Garamond';
+}
+
+p {
+  color: rgb(81, 81, 81);
 }
 
 h1,
@@ -16,7 +20,14 @@ h4,
 h5,
 h6 {
   font-family: 'Hammersmith One';
-  color: slategray;
+  color: var(---text);
+}
+
+/* styling for colors */
+:root {
+---theme: rgb(92, 233, 255);
+---text: royalblue;
+--hover: rgb(144, 0, 255);
 }
 
 /* navbar */
@@ -24,7 +35,7 @@ h6 {
 .customNav {
   position: fixed;
   width: 100%;
-  background-color: slategray !important;
+  background-color: var(---theme) !important;
   background-size: 5vh;
   z-index: 10;
 }
@@ -41,7 +52,7 @@ h6 {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: white;
+  color: var(---body);
 }
 
 #work {
@@ -69,13 +80,13 @@ h6 {
 .emphasis {
   font-size: 2.5rem;
   font-family: 'Hammersmith One';
-  color: slategray;
+  color: var(---text);
 }
 
 .copy {
   font-family: 'EB Garamond';
   font-size: 2rem;
-  color: slategray;
+  color: var(---text);
 }
 
 /* work cards and grid */
@@ -119,7 +130,7 @@ h6 {
 
 /* footer */
 .footerContainer {
-  background-color: slategray;
+  background-color: var(---text);
   height: 80px;
   max-width: 100%;
 }
@@ -140,7 +151,6 @@ h6 {
   margin: 18px 0px 0px 10px; 
   border-style: dotted;
   border-width: 2px;
-
 }
 
 .boxshadow:hover 
