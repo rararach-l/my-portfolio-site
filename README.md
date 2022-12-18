@@ -2,12 +2,13 @@
 
 ## Description
 This is a revision of my first portfolio project, built using HTML, CSS and Bootstrap 4.
+It can be viewed here: https://rararach-l.github.io/my-portfolio-site/
 
 ## Installation
 There are no installation requirements for this website.
 
 ## Usage
-The codebase HTML and CSS files are commented to provide information on the layout, with details on the sections and the css for ease of future editing. Variables have also been employed to allow for ease of colour changes.
+The codebase HTML and CSS files are commented to provide information on the layout, with details on the sections and the css for ease of future editing. Variables have also been employed to allow for ease of stylistic changes.
 
 ![](/images/x)
 This website is best viewed on a desktop but will also work on smaller screens, with some adjustments to styling and design. This screenshot demonstrates how the website should display on a desktop. 
