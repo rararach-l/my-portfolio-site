@@ -4,6 +4,14 @@ body {
   height: 100%;
 }
 
+/* styling for colors */
+:root {
+---theme: rgb(92, 233, 255);
+---text: royalblue;
+---hover: rgb(144, 0, 255);
+---link: white;
+}
+
 /* styling for fonts */
 body {
   font-family: 'EB Garamond';
@@ -23,12 +31,7 @@ h6 {
   color: var(---text);
 }
 
-/* styling for colors */
-:root {
----theme: rgb(92, 233, 255);
----text: royalblue;
---hover: rgb(144, 0, 255);
-}
+
 
 /* navbar */
 
@@ -43,16 +46,15 @@ h6 {
 .navbar-nav {
   margin-left: auto;
   margin-right: auto;
-  !important;
   align-items: space-between;
 }
 
-.nav-link {
-  color: white;
+.navbar-light .navbar-nav .nav-link {
+  color: var(---link);
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: var(---body);
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(---hover);
 }
 
 #work {
@@ -63,7 +65,7 @@ h6 {
 
 .jumbotron {
   height: 80vh;
-  background-image: url(images/graph-paper.png);
+  background-image: url(/images/graph-paper.png);
   background-size: cover;
   border-radius: 0;
 }
@@ -146,17 +148,14 @@ h6 {
   margin-top: 30px;
 }
 
-.footerContent > button {
-  border-radius: 0%;
-  margin: 18px 0px 0px 10px; 
-  border-style: dotted;
+.footerContent > h4 {
+  margin: 20px 30px 0px 25px; 
   border-width: 2px;
+  color: var(---link);
 }
 
-.boxshadow:hover 
-.boxshadow:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
+.footerContent > h4:hover {
+  color: var(---hover);
 }
 
 /* media queries */
