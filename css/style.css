@@ -6,7 +6,7 @@ body {
 
 /* styling for colors */
 :root {
----theme: rgb(92, 233, 255);
+---theme: rgb(91, 174, 186);
 ---text: royalblue;
 ---hover: rgb(144, 0, 255);
 ---link: white;
@@ -65,7 +65,7 @@ h6 {
 
 .jumbotron {
   height: 80vh;
-  background-image: url(./images/graph-paper.png);
+  background-image: url(../images/graph-paper.png);
   background-size: cover;
   border-radius: 0;
 }
@@ -164,4 +164,14 @@ h6 {
   .jumboCopy {
     display: none;
   }
+
+ #contact {
+    font-size: 18px;
+  }
+
+  .footerContent > h4 {
+    font-size: 18px;
+    margin: 25px 25px 0px 25px; 
+  }
+
 }
