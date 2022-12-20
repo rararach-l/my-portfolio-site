@@ -8,7 +8,7 @@ body {
 :root {
 ---theme: rgb(91, 174, 186);
 ---text: royalblue;
----hover: rgb(144, 0, 255);
+---hover: rgb(193, 231, 255);
 ---link: white;
 }
 
@@ -161,8 +161,33 @@ h6 {
 /* media queries */
 
 @media (max-width: 570px) {
+  .jumbotron {
+    height: 20vh;
+  }
+
+  .jumbotron > img {
+    margin-top: 30px;
+  }
+
   .jumboCopy {
     display: none;
+  }
+
+  .latestWork {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-img-top {
+    height: 150px;
+  }
+  
+  .card-img-top.line {
+    height: 150px;
+  }
+  
+  .card-img-top.grid {
+    height: 150px;
   }
 
  #contact {
