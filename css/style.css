@@ -65,7 +65,7 @@ h6 {
 
 .jumbotron {
   height: 80vh;
-  background-image: url(images/graph-paper.png);
+  background-image: url(./images/graph-paper.png);
   background-size: cover;
   border-radius: 0;
 }
